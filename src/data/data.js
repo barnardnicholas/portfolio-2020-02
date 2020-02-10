@@ -1,30 +1,30 @@
 export const tiles = [
   {
-    name: "Tile 1",
-    slug: "tile1",
-    tags: ["web"],
+    name: "NC News",
+    slug: "ncnews",
+    tags: ["web", "javascript", "reactjs", "expressjs", "nodejs", "psql"],
     description:
-      "Bacon ipsum dolor amet brisket kevin flank pancetta pork belly, shoulder chislic. Pork chop cupim bresaola shank pork loin jerky andouille sausage ball tip venison turducken meatloaf brisket frankfurter tri-tip."
+      "Responsive, Reddit-style news aggregation site. Developed Full-Stack in 10 days."
   },
   {
-    name: "Tile 2",
-    slug: "tile2",
-    tags: ["web"],
+    name: "NTGTFOI - The Game",
+    slug: "ntgtfoi",
+    tags: ["windows", "native", "ags", "games"],
     description:
-      "Bacon ipsum dolor amet brisket kevin flank pancetta pork belly, shoulder chislic. Pork chop cupim bresaola shank pork loin jerky andouille sausage ball tip venison turducken meatloaf brisket frankfurter tri-tip."
+      "Fun retro point & click adventure game, produced in 2015 using Adventure Game Studio"
   },
   {
-    name: "Tile 3",
-    slug: "tile3",
-    tags: ["web"],
+    name: "Tiny Dictionary",
+    slug: "tinydictionary",
+    tags: ["web", "javascript", "reactjs", "nodejs", "api"],
     description:
-      "Bacon ipsum dolor amet brisket kevin flank pancetta pork belly, shoulder chislic. Pork chop cupim bresaola shank pork loin jerky andouille sausage ball tip venison turducken meatloaf brisket frankfurter tri-tip."
+      "Super-simple, stripped- down dictionary with Google-style live update search."
   },
   {
-    name: "Tile 4",
-    slug: "tile4",
-    tags: ["web"],
+    name: "Ambiscape",
+    slug: "ambiscape",
+    tags: ["web", "javascript", "reactjs", "expressjs", "nodejs", "psql"],
     description:
-      "Bacon ipsum dolor amet brisket kevin flank pancetta pork belly, shoulder chislic. Pork chop cupim bresaola shank pork loin jerky andouille sausage ball tip venison turducken meatloaf brisket frankfurter tri-tip."
+      "Web/mobile-based app which procedurally-generates a relaxing ambient soundscape to help users sleep, relax or concentrate. Users can load preset scenarios or create and save their own."
   }
 ];

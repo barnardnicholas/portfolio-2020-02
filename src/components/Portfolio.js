@@ -1,20 +1,23 @@
 import React, { Component } from "react";
 import * as data from "../data/data";
+import { Router, Link } from "@reach/router";
+import Tile from "./Tile";
 
 class Portfolio extends Component {
-  componentDidMount() {
-    console.log("didmount");
-    window.scrollTo(0, 0);
-  }
   render() {
     return (
       <div className="tilearea">
         {data.tiles.map(tile => {
           return (
-            <div className="tile" id={tile.slug}>
-              <h3>{tile.name}</h3>
-              <p>{tile.description}</p>
-            </div>
+            <Link to={`${tile.slug}`} className="reactlink">
+              <Tile
+                path={`/${tile.slug}`}
+                name={tile.name}
+                slug={tile.slug}
+                description={tile.description}
+                tags={tile.tags}
+              />
+            </Link>
           );
         })}
       </div>
