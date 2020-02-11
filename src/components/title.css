@@ -34,7 +34,7 @@
 .title-deco-container .content {
   grid-column: start / end;
   grid-row: content-start / content-end;
-  z-index: 100;
+  z-index: 55;
   border-top: 1px solid;
   border-bottom: 1px solid;
 }

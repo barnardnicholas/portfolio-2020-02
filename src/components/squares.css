@@ -67,13 +67,13 @@
 .square-deco-container .square-deco-tall {
   grid-column: gap-start / gap-end;
   grid-row: outer-start / outer-end;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
+  border-top: 1px dotted;
+  border-bottom: 1px dotted;
 }
 
 .square-deco-container .square-deco-wide {
   grid-column: outer-start / outer-end;
   grid-row: gap-start / gap-end;
-  border-left: 1px solid;
-  border-right: 1px solid;
+  border-left: 1px dotted;
+  border-right: 1px dotted;
 }

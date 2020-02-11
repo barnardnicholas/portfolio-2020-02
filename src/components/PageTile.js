@@ -1,14 +1,11 @@
 import React from "react";
 import "./tile.css";
 
-const PageTile = ({ title, content }) => {
+const PageTile = ({ content }) => {
   return (
     <div className="tile" style={{ minWidth: "276px", maxWidth: "700px" }}>
       <div className="corners-deco-container container">
-        <div className="content">
-          <h3>{title}</h3>
-          <p>{content}</p>
-        </div>
+        <div className="content">{content}</div>
         <div className="square-left-top"></div>
         <div className="square-left-bottom"></div>
         <div className="square-right-top"></div>
