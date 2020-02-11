@@ -40,24 +40,32 @@
   grid-column: square-start 1 / square-end 1;
   grid-row: square-start 1 / square-end 1;
   border: 1px dotted;
+  background-color: #ffffff;
+  z-index: 10;
 }
 
 .corners-deco-container .square-left-bottom {
   grid-column: square-start 1 / square-end 1;
   grid-row: square-start 2 / square-end 2;
   border: 1px dotted;
+  background-color: #ffffff;
+  z-index: 10;
 }
 
 .corners-deco-container .square-right-top {
   grid-column: square-start 2 / square-end 2;
   grid-row: square-start 1 / square-end 1;
   border: 1px dotted;
+  background-color: #ffffff;
+  z-index: 10;
 }
 
 .corners-deco-container .square-right-bottom {
   grid-column: square-start 2 / square-end 2;
   grid-row: square-start 2 / square-end 2;
   border: 1px dotted;
+  background-color: #ffffff;
+  z-index: 10;
 }
 
 .corners-deco-container .horizontal-edge-left {
