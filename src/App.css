@@ -23,8 +23,10 @@
 }
 
 h1 {
+  margin: 6px;
+  margin-bottom: 0px;
   font-family: "Seaside";
-  font-size: 36px;
+  font-size: 32px;
 }
 
 h2 {
@@ -32,12 +34,26 @@ h2 {
   font-size: 16px;
 }
 
+h4 {
+  font-size: 12px;
+  margin: 0px;
+}
+
 .header {
-  height: 100px;
+  height: 86px;
   width: 100%;
   /* border: 1px solid; */
   background-color: white;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headersubtitle {
+  display: flex;
+  justify-content: space-between;
+  width: 66%;
 }
 
 .navbar {
@@ -118,6 +134,59 @@ h2 {
   grid-row: gap-start / gap-end;
   border-left: 1px solid;
   border-right: 1px solid;
+}
+
+.triple-diamond-deco-container {
+  display: grid;
+  grid-template-columns:
+    [line-start] 1fr
+    [small-start] 8px
+    [large-start] 2px
+    [small-end] 12px
+    [small-start] 2px
+    [large-end] 8px
+    [small-end] 1fr
+    [line-end];
+  grid-template-rows:
+    [large-start] 3px
+    [small-start] 5px
+    [midline] 5px
+    [small-end] 3px
+    [large-end];
+  width: 90%;
+  /*   background-color: peachpuff; */
+}
+
+.triple-diamond-deco-container .left-line {
+  grid-column: line-start / small-end 1;
+  grid-row: midline / large-end;
+  border-top: 1px dotted;
+}
+
+.triple-diamond-deco-container .right-line {
+  grid-column: small-start 2 / line-end;
+  grid-row: midline / large-end;
+  border-top: 1px dotted;
+}
+
+.triple-diamond-deco-container .small-diamond-left {
+  grid-column: small-start 1 / small-end 1;
+  grid-row: small-start / small-end;
+  transform: rotate(45deg);
+  border: 1px dotted;
+}
+
+.triple-diamond-deco-container .small-diamond-right {
+  grid-column: small-start 2 / small-end 2;
+  grid-row: small-start / small-end;
+  transform: rotate(45deg);
+  border: 1px dotted;
+}
+
+.triple-diamond-deco-container .large-diamond {
+  grid-area: large;
+  transform: rotate(45deg);
+  border: 1px dotted;
 }
 
 .navbutton {
