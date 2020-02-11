@@ -1,13 +1,40 @@
+@font-face {
+  font-family: "Densia Sans";
+  src: url("./assets/fonts/densia-sans/densiasans-webfont.eot");
+  src: url("./assets/fonts/densia-sans/densiasans-webfont.eot")
+      format("embedded-opentype"),
+    url("./assets/fonts/densia-sans/densiasans-webfont.woff") format("woff"),
+    url("./assets/fonts/densia-sans/densiasans-webfont.woff2") format("woff2"),
+    url("./assets/fonts/densia-sans/densiasans-webfont.ttf") format("truetype"),
+    url("./assets/fonts/densia-sans/densiasans-webfont.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Seaside";
+  src: url("./assets/fonts/seaside/seasideresortnf-popd-webfont.eot");
+  src: url("./assets/fonts/seaside/seasideresortnf-popd-webfont.eot")
+      format("embedded-opentype"),
+    url("./assets/fonts/seaside/seasideresortnf-popd-webfont.woff")
+      format("woff"),
+    url("./assets/fonts/seaside/seasideresortnf-popd-webfont.woff2")
+      format("woff2"),
+    url("./assets/fonts/seaside/seasideresortnf-popd-webfont.ttf")
+      format("truetype"),
+    url("./assets/fonts/seaside/seasideresortnf-popd-webfont.svg") format("svg");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+  font-family: "Densia Sans";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* filter: invert(); */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

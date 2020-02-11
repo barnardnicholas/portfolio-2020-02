@@ -16,35 +16,113 @@
 }
 
 .viewport {
-  top: 210px;
+  top: 150px;
   position: absolute;
   width: 100%;
   overflow: scroll;
 }
 
+h1 {
+  font-family: "Seaside";
+  font-size: 36px;
+}
+
 h2 {
+  margin: 6px;
   font-size: 16px;
 }
 
 .header {
-  height: 156px;
+  height: 100px;
   width: 100%;
-  border: 1px solid;
-  font-size: 64px;
+  /* border: 1px solid; */
   background-color: white;
   overflow: hidden;
 }
 
 .navbar {
   width: 100%;
-  border: 1px solid;
+  background-color: white;
+}
+
+.square-deco-container {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns:
+    [outer-start] 5px
+    [mid-start] 5px
+    [inner-start] 2px
+    [gap-start] 1fr
+    [gap-end] 2px
+    [inner-end] 5px
+    [mid-end] 5px
+    [outer-end];
+  grid-template-rows:
+    [outer-start] 5px
+    [mid-start] 5px
+    [inner-start] 2px
+    [gap-start] 1fr
+    [gap-end] 2px
+    [inner-end] 5px
+    [mid-end] 5px
+    [outer-end];
+  width: 100%;
+}
+
+.square-deco-container .square-deco-content {
+  grid-area: inner;
+  padding: 0px 10px;
   display: flex;
   justify-content: space-around;
-  background-color: white;
+  height: 30px;
+}
+
+.square-deco-container .square-deco-inner {
+  grid-area: mid;
+  border: 1px solid;
+}
+
+.square-deco-container .square-deco-square-left-top {
+  grid-column: outer-start / inner-start;
+  grid-row: outer-start / inner-start;
+  border: 1px solid;
+}
+
+.square-deco-container .square-deco-square-left-bottom {
+  grid-column: outer-start / inner-start;
+  grid-row: inner-end / outer-end;
+  border: 1px solid;
+}
+
+.square-deco-container .square-deco-square-right-top {
+  grid-column: inner-end / outer-end;
+  grid-row: outer-start / inner-start;
+  border: 1px solid;
+}
+
+.square-deco-container .square-deco-square-right-bottom {
+  grid-column: inner-end / outer-end;
+  grid-row: inner-end / outer-end;
+  border: 1px solid;
+}
+
+.square-deco-container .square-deco-tall {
+  grid-column: gap-start / gap-end;
+  grid-row: outer-start / outer-end;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.square-deco-container .square-deco-wide {
+  grid-column: outer-start / outer-end;
+  grid-row: gap-start / gap-end;
+  border-left: 1px solid;
+  border-right: 1px solid;
 }
 
 .navbutton {
   display: inline-block;
+  text-anchor: start;
 }
 
 .tilearea {

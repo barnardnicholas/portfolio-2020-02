@@ -25,7 +25,7 @@ const App = () => {
           <Portfolio path="/portfolio" />
           <About path="/about" />
           <Contact path="/contact" />
-          <Ambiscape path="portfolio/ambiscape" />
+          <Ambiscape path="/portfolio/ambiscape" />
           <Tinydictionary path="/portfolio/tinydictionary" />
           <Ntgtfoi path="/portfolio/ntgtfoi" />
           <Ncnews path="/portfolio/ncnews" />

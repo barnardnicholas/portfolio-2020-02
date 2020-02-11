@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import * as data from "../data/data";
-import { Router, Link } from "@reach/router";
+import { Link } from "@reach/router";
 import Tile from "./Tile";
+import * as data from "../data/data";
 
 class Portfolio extends Component {
   render() {
