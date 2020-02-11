@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "@reach/router";
+import "./squares.css";
 
 const NavBar = () => {
   return (

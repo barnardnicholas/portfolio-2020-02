@@ -1,30 +1,32 @@
 import React from "react";
 import "./tile.css";
+import placeholder from "../assets/images/placeholder-pic-300x100.png";
 
 const Tile = ({ name, slug, description, tags }) => {
   return (
     <div className="tile" id={slug}>
-      <div class="corners-deco-container container">
-        <div class="content">
+      <div className="corners-deco-container container">
+        <div className="content">
+          <img src={placeholder} alt={name} width="228" height="76" />
           <h3>{name}</h3>
           <p>{description}</p>
         </div>
-        <div class="square-left-top"></div>
-        <div class="square-left-bottom"></div>
-        <div class="square-right-top"></div>
-        <div class="square-right-bottom"></div>
-        <div class="vertical-edge-left"></div>
-        <div class="vertical-edge-right"></div>
-        <div class="horizontal-edge-left"></div>
-        <div class="horizontal-edge-right"></div>
-        <div class="left-outer"></div>
-        <div class="right-outer"></div>
-        <div class="top-outer"></div>
-        <div class="bottom-outer"></div>
-        <div class="left-inner"></div>
-        <div class="right-inner"></div>
-        <div class="top-inner"></div>
-        <div class="bottom-inner"></div>
+        <div className="square-left-top"></div>
+        <div className="square-left-bottom"></div>
+        <div className="square-right-top"></div>
+        <div className="square-right-bottom"></div>
+        <div className="vertical-edge-left"></div>
+        <div className="vertical-edge-right"></div>
+        <div className="horizontal-edge-left"></div>
+        <div className="horizontal-edge-right"></div>
+        <div className="left-outer"></div>
+        <div className="right-outer"></div>
+        <div className="top-outer"></div>
+        <div className="bottom-outer"></div>
+        <div className="left-inner"></div>
+        <div className="right-inner"></div>
+        <div className="top-inner"></div>
+        <div className="bottom-inner"></div>
       </div>
     </div>
   );

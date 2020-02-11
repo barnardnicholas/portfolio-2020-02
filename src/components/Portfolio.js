@@ -9,7 +9,7 @@ class Portfolio extends Component {
       <div className="tilearea">
         {data.tiles.map(tile => {
           return (
-            <Link to={`${tile.slug}`} className="reactlink">
+            <Link key={tile.slug} to={`${tile.slug}`} className="reactlink">
               <Tile
                 path={`/${tile.slug}`}
                 name={tile.name}
