@@ -53,7 +53,8 @@ h4 {
 .headersubtitle {
   display: flex;
   justify-content: space-between;
-  width: 66%;
+  max-width: 66%;
+  min-width: 200px;
 }
 
 .navbar {
@@ -153,7 +154,8 @@ h4 {
     [midline] 5px
     [small-end] 3px
     [large-end];
-  width: 90%;
+  max-width: 90%;
+  min-width: 300px;
   /*   background-color: peachpuff; */
 }
 
@@ -189,6 +191,153 @@ h4 {
   border: 1px dotted;
 }
 
+.corners-deco-container {
+  display: grid;
+  grid-template-columns:
+    [corner-start] 5px
+    [square-start] 5px
+    [edge-start] 5px
+    [square-end] 5px
+    [corner-end] 25px
+    [edge-end] 1fr
+    [edge-start] 25px
+    [corner-start] 5px
+    [square-start] 5px
+    [edge-end] 5px
+    [square-end] 5px
+    [corner-end];
+  grid-template-rows:
+    [corner-start] 5px
+    [square-start] 5px
+    [edge-start] 5px
+    [square-end] 5px
+    [corner-end] 25px
+    [edge-end] 1fr
+    [edge-start] 25px
+    [corner-start] 5px
+    [square-start] 5px
+    [edge-end] 5px
+    [square-end] 5px
+    [corner-end];
+  min-width: 75px;
+  min-height: 200px;
+  /*   background-color: peachpuff; */
+}
+
+.corners-deco-container .content {
+  grid-column: corner-end 1 / corner-start 2;
+  grid-row: corner-end 1 / corner-start 2;
+  padding: 5px 10px;
+}
+
+.corners-deco-container .square-left-top {
+  grid-column: square-start 1 / square-end 1;
+  grid-row: square-start 1 / square-end 1;
+  border: 1px dotted;
+}
+
+.corners-deco-container .square-left-bottom {
+  grid-column: square-start 1 / square-end 1;
+  grid-row: square-start 2 / square-end 2;
+  border: 1px dotted;
+}
+
+.corners-deco-container .square-right-top {
+  grid-column: square-start 2 / square-end 2;
+  grid-row: square-start 1 / square-end 1;
+  border: 1px dotted;
+}
+
+.corners-deco-container .square-right-bottom {
+  grid-column: square-start 2 / square-end 2;
+  grid-row: square-start 2 / square-end 2;
+  border: 1px dotted;
+}
+
+.corners-deco-container .horizontal-edge-left {
+  grid-column: edge-start 1 / edge-end 1;
+  grid-row: edge-start 1 / edge-end 2;
+  border-top: 1px dotted;
+  border-bottom: 1px dotted;
+}
+
+.corners-deco-container .horizontal-edge-right {
+  grid-column: edge-start 2 / edge-end 2;
+  grid-row: edge-start 1 / edge-end 2;
+  border-top: 1px dotted;
+  border-bottom: 1px dotted;
+}
+
+.corners-deco-container .vertical-edge-left {
+  grid-column: edge-start 1 / edge-end 2;
+  grid-row: edge-start 1 / edge-end 1;
+  border-left: 1px dotted;
+  border-right: 1px dotted;
+}
+
+.corners-deco-container .vertical-edge-right {
+  grid-column: edge-start 1 / edge-end 2;
+  grid-row: edge-start 2 / edge-end 2;
+  border-left: 1px dotted;
+  border-right: 1px dotted;
+}
+
+.corners-deco-container .left-outer {
+  grid-column: corner-start 1 / corner-end 1;
+  grid-row: corner-start 1 / corner-end 2;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.corners-deco-container .right-outer {
+  grid-column: corner-start 2 / corner-end 2;
+  grid-row: corner-start 1 / corner-end 2;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.corners-deco-container .top-outer {
+  grid-column: corner-start 1 / corner-end 2;
+  grid-row: corner-start 1 / corner-end 1;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.corners-deco-container .bottom-outer {
+  grid-column: corner-start 1 / corner-end 2;
+  grid-row: corner-start 2 / corner-end 2;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.corners-deco-container .left-inner {
+  grid-column: corner-start 1 / edge-start 1;
+  grid-row: corner-end 1 / corner-start 2;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.corners-deco-container .right-inner {
+  grid-column: edge-end 2 / corner-end 2;
+  grid-row: corner-end 1 / corner-start 2;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.corners-deco-container .top-inner {
+  grid-column: corner-end 1 / corner-start 2;
+  grid-row: corner-start 1 / edge-start 1;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.corners-deco-container .bottom-inner {
+  grid-column: corner-end 1 / corner-start 2;
+  grid-row: edge-end 2 / corner-end 2;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
 .navbutton {
   display: inline-block;
   text-anchor: start;
@@ -205,11 +354,9 @@ h4 {
 
 .tile {
   margin: 16px;
-  padding: 16px;
   display: inline-block;
   min-width: 200px;
   min-height: 200px;
   max-height: 300px;
   max-width: 300px;
-  border: 1px solid;
 }
