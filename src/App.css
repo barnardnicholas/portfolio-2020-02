@@ -3,6 +3,17 @@
   align-items: center;
 }
 
+.overlay {
+  z-index: 99;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: url("./assets/images/black-paper.png");
+  background-repeat: repeat;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
 .reactlink {
   text-decoration: none;
   color: inherit;

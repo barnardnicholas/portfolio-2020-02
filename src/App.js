@@ -31,6 +31,7 @@ const App = () => {
           <Ncnews path="/portfolio/ncnews" />
         </Router>
       </div>
+      <div className="overlay"></div>
     </div>
   );
 };
