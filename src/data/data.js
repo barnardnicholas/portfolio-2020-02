@@ -1,8 +1,10 @@
+import images from "../assets/images/images-index";
+
 export const tiles = [
   {
     name: "NC News",
     slug: "ncnews",
-    thumbnail: "",
+    thumbnail: "placeholder-pic-300x100.png",
     tags: ["web", "javascript", "reactjs", "expressjs", "nodejs", "psql"],
     description:
       "Responsive, Reddit-style news aggregation site. Developed Full-Stack in 10 days."
@@ -10,7 +12,7 @@ export const tiles = [
   {
     name: "NTGTFOI - The Game",
     slug: "ntgtfoi",
-    thumbnail: "",
+    thumbnail: "placeholder-pic-300x100.png",
     tags: ["windows", "native", "ags", "games"],
     description:
       "Fun retro point & click adventure game, produced in 2015 using Adventure Game Studio"
@@ -18,7 +20,7 @@ export const tiles = [
   {
     name: "Tiny Dictionary",
     slug: "tinydictionary",
-    thumbnail: "",
+    thumbnail: "placeholder-pic-300x100.png",
     tags: ["web", "javascript", "reactjs", "nodejs", "api"],
     description:
       "Super-simple, stripped- down dictionary with Google-style live update search."
@@ -26,7 +28,7 @@ export const tiles = [
   {
     name: "Ambiscape",
     slug: "ambiscape",
-    thumbnail: "",
+    thumbnail: "placeholder-pic-300x100.png",
     tags: ["web", "javascript", "reactjs", "expressjs", "nodejs", "psql"],
     description:
       "Web/mobile-based app which procedurally-generates a relaxing ambient soundscape to help users sleep, relax or concentrate. Users can load preset scenarios or create and save their own."

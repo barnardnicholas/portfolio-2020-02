@@ -2,7 +2,7 @@ import React from "react";
 import "./tile.css";
 import placeholder from "../assets/images/placeholder-pic-300x100.png";
 
-const Tile = ({ name, slug, description, tags }) => {
+const Tile = ({ name, slug, description, tags, thumbnail }) => {
   return (
     <div className="tile" id={slug}>
       <div className="corners-deco-container container">
