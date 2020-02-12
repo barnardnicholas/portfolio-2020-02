@@ -3,7 +3,7 @@ import "./tile.css";
 
 const PageTile = ({ content }) => {
   return (
-    <div className="tile" style={{ minWidth: "276px", maxWidth: "700px" }}>
+    <div className="pagetile">
       <div className="corners-deco-container container">
         <div className="content">{content}</div>
         <div className="square-left-top"></div>

@@ -7,8 +7,15 @@ const aboutContent = () => {
     <>
       <h3>Styling</h3>
       <p>
-        Art Deco Styling Elements by Daine https://codepen.io/veralidaine
-        https://codepen.io/veralidaine/pen/ayewQw
+        Art Deco Styling Elements by Daine
+        <br />
+        <a href="https://codepen.io/veralidaine">
+          https://codepen.io/veralidaine
+        </a>
+        <br />
+        <a href="https://codepen.io/veralidaine/pen/ayewQw">
+          https://codepen.io/veralidaine/pen/ayewQw
+        </a>
         <br />
         <br />
       </p>

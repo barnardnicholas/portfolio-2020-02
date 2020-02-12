@@ -1,0 +1,17 @@
+@media only screen and (min-width: 345px) {
+  .pagetile {
+    max-width: 300px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .pagetile {
+    min-width: 500px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .pagetile {
+    min-width: 700px;
+  }
+}

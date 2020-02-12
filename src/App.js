@@ -1,6 +1,7 @@
 import React from "react";
 import { Router } from "@reach/router";
 import "./App.css";
+import "./media-queries.css";
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
