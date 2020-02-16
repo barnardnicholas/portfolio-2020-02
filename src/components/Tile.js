@@ -13,7 +13,7 @@ const Tile = ({ name, slug, description, tags, thumbnail }) => {
             alt={name}
             width="228"
             height="76"
-            className="thumbnail"
+            className="thumbnailbanner"
           />
           <h3>{name}</h3>
           <p>{description}</p>
