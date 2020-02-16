@@ -56,6 +56,13 @@ h4 {
 
 a {
   word-wrap: break-word;
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: none;
 }
 
 .header {
@@ -111,6 +118,14 @@ a {
   max-height: 300px;
 }
 
+.thumbnailcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .thumbnail {
   filter: grayscale(100%) contrast(66%);
+  margin: 8px;
+  border: 6px solid white;
 }
