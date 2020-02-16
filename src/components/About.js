@@ -10,20 +10,10 @@ const aboutContent = () => {
     <>
       <h3>Tech Stack</h3>
       <br />
-      <img
-        src={reactjs}
-        alt="React.js"
-        width="180px"
-        height="60px"
-        style={{ marginRight: "16px" }}
-      />
-      <img
-        src={reachrouter}
-        alt="Reach/Router"
-        width="180px"
-        height="60px"
-        style={{ marginLeft: "16px" }}
-      />
+      <div className="thumbnailcontainer">
+        <img src={reactjs} alt="React.js" width="180px" height="60px" />
+        <img src={reachrouter} alt="Reach/Router" width="180px" height="60px" />
+      </div>
       <br />
       <br />
       <p>This web app was created using React JS and Reach Router.</p>
