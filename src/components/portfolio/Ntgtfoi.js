@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "../Title";
 import PageTile from "../PageTile";
+import "../diamond.css";
 import ntgtfoi from "../../assets/images/ntgtfoi_600x200.png";
 import pic1 from "../../assets/images/ntgtfoi/4.jpg";
 import pic2 from "../../assets/images/ntgtfoi/5.jpg";
@@ -22,9 +23,14 @@ const ntgtfoiContent = () => {
       <br />
       <br />
       <h3>A Point-And-Drink Adventure Game</h3>
-      <a href="https://gamejolt.com/games/ntgtfoi-the-game/67958">
+      <br />
+      <a
+        href="https://gamejolt.com/games/ntgtfoi-the-game/67958"
+        style={{ textDecoration: "underline" }}
+      >
         https://gamejolt.com/games/ntgtfoi-the-game/67958
       </a>
+      <br />
       <p>
         <i>"NTGTFOI (Need-To-Get-The-F***-On-It)"</i> is a Point-and-Drink
         Adventure Game designed and programmed by Nick Barnard to commemorate
@@ -42,40 +48,43 @@ const ntgtfoiContent = () => {
         time.
         <br />
         <br />
-        <div className="thumbnailcontainer">
-          <img
-            src={pic1}
-            alt="Screenshot 1"
-            height="125"
-            width="200"
-            className="thumbnail"
-          />
-          <img
-            src={pic2}
-            alt="Screenshot 2"
-            height="125"
-            width="200"
-            className="thumbnail"
-          />
-          <img
-            src={pic3}
-            alt="Screenshot 3"
-            height="125"
-            width="200"
-            className="thumbnail"
-          />
-        </div>
-        <br />
-        <br />
         As the brave protagonist Matt Hartley, you must embrace your advancing
         years by going out for a night on the town. Explore bars, buy drinks,
         get drunk. Oh and Happy Birthday.
       </p>
+      <br />
+      <center>
+        <div className="triple-diamond-deco-container container">
+          <div className="left-line"></div>
+          <div className="right-line"></div>
+          <div className="small-diamond-left"></div>
+          <div className="small-diamond-right"></div>
+          <div className="large-diamond"></div>
+        </div>
+      </center>
+      <br />
+      <h3>Screenshots:</h3>
+      <div className="thumbnailcontainer">
+        <img src={pic1} alt="Screenshot 1" className="thumbnail" />
+        <img src={pic2} alt="Screenshot 2" className="thumbnail" />
+        <img src={pic3} alt="Screenshot 3" className="thumbnail" />
+      </div>
+      <br />
+
+      <br />
+      <center>
+        <div className="triple-diamond-deco-container container">
+          <div className="left-line"></div>
+          <div className="right-line"></div>
+          <div className="small-diamond-left"></div>
+          <div className="small-diamond-right"></div>
+          <div className="large-diamond"></div>
+        </div>
+      </center>
+      <br />
       <h3>Gameplay:</h3>
       <div className="thumbnailcontainer">
         <iframe
-          width="200"
-          height="125"
           src="https://www.youtube.com/embed/hqbVsGNJftU"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -84,11 +93,19 @@ const ntgtfoiContent = () => {
         ></iframe>
       </div>
       <br />
+      <center>
+        <div className="triple-diamond-deco-container container">
+          <div className="left-line"></div>
+          <div className="right-line"></div>
+          <div className="small-diamond-left"></div>
+          <div className="small-diamond-right"></div>
+          <div className="large-diamond"></div>
+        </div>
+      </center>
+      <br />
       <h3>Making Of:</h3>
       <div className="thumbnailcontainer">
         <iframe
-          width="200"
-          height="125"
           src="https://www.youtube.com/embed/jALHvvwn3Dg"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -96,8 +113,6 @@ const ntgtfoiContent = () => {
           className="thumbnail"
         ></iframe>
         <iframe
-          width="200"
-          height="125"
           src="https://www.youtube.com/embed/bcrZ9HT9Wfw"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -105,7 +120,17 @@ const ntgtfoiContent = () => {
           className="thumbnail"
         ></iframe>
       </div>
-
+      <br />
+      <center>
+        <div className="triple-diamond-deco-container container">
+          <div className="left-line"></div>
+          <div className="right-line"></div>
+          <div className="small-diamond-left"></div>
+          <div className="small-diamond-right"></div>
+          <div className="large-diamond"></div>
+        </div>
+      </center>
+      <br />
       <h3>Instructions:</h3>
       <p>
         Ensure that all files are kept in the same folder on a local hard drive.
@@ -119,6 +144,17 @@ const ntgtfoiContent = () => {
         All Saved games are deposited in C:\Users[username]\Saved Games\NTGTFOI\
         on Windows
       </p>
+      <br />
+      <center>
+        <div className="triple-diamond-deco-container container">
+          <div className="left-line"></div>
+          <div className="right-line"></div>
+          <div className="small-diamond-left"></div>
+          <div className="small-diamond-right"></div>
+          <div className="large-diamond"></div>
+        </div>
+      </center>
+      <br />
       <h3>About:</h3>
       <p>
         Version at time of upload - 1.0

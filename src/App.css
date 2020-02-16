@@ -128,4 +128,6 @@ a:visited {
   filter: grayscale(100%) contrast(66%);
   margin: 8px;
   border: 6px solid white;
+  width: 200px;
+  height: 125px;
 }
