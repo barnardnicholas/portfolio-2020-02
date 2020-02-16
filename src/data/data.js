@@ -1,10 +1,11 @@
 import images from "../assets/images/images-index";
+import placeholder from "../assets/images/placeholder-pic-300x100.png";
 
 export const tiles = [
   {
     name: "NC News",
     slug: "ncnews",
-    thumbnail: "placeholder-pic-300x100.png",
+    thumbnail: placeholder,
     tags: ["web", "javascript", "reactjs", "expressjs", "nodejs", "psql"],
     description:
       "Responsive, Reddit-style news aggregation site. Developed Full-Stack in 10 days."

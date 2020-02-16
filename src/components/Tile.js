@@ -1,13 +1,20 @@
 import React from "react";
 import "./tile.css";
 import placeholder from "../assets/images/placeholder-pic-300x100.png";
+import images from "../assets/images/images-index";
 
 const Tile = ({ name, slug, description, tags, thumbnail }) => {
   return (
     <div className="tile" id={slug}>
       <div className="corners-deco-container container">
         <div className="content">
-          <img src={placeholder} alt={name} width="228" height="76" />
+          <img
+            src={images[slug]}
+            alt={name}
+            width="228"
+            height="76"
+            className="thumbnail"
+          />
           <h3>{name}</h3>
           <p>{description}</p>
         </div>
