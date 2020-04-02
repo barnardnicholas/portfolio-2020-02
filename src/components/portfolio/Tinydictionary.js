@@ -18,7 +18,7 @@ const tinyContent = () => {
       <p>
         Hosted Version:{" "}
         <a
-          href="https://tinydictionary/netlify.com"
+          href="https://tinydictionary.netlify.com"
           style={{ textDecoration: "underline" }}
         >
           https://tinydictionary/netlify.com
