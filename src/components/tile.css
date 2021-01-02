@@ -27,7 +27,7 @@
     [square-end] 5px
     [corner-end];
   min-width: 75px;
-  height: 240px;
+  /* height: 240px; */
 }
 
 .corners-deco-container .content {

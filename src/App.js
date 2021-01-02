@@ -12,6 +12,7 @@ import Ambiscape from "./components/portfolio/Ambiscape";
 import Tinydictionary from "./components/portfolio/Tinydictionary";
 import Ntgtfoi from "./components/portfolio/Ntgtfoi";
 import Ncnews from "./components/portfolio/Ncnews";
+import Plan9 from "./components/portfolio/Plan9";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
           <Tinydictionary path="/portfolio/tinydictionary" />
           <Ntgtfoi path="/portfolio/ntgtfoi" />
           <Ncnews path="/portfolio/ncnews" />
+          <Plan9 path="portfolio/plan9" />
         </Router>
       </div>
       <div className="overlay"></div>

@@ -9,7 +9,7 @@ const Tile = ({ name, slug, description, tags, thumbnail }) => {
       <div className="corners-deco-container container">
         <div className="content">
           <img
-            src={images[slug]}
+            src={images[slug] || placeholder}
             alt={name}
             width="228"
             height="76"
